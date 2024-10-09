@@ -1,0 +1,63 @@
+﻿@using SHOPPER.Models;
+@{
+    ViewBag.Title = "SHOPPER - ADMIN - DANH SÁCH SẢN PHẨM";
+    List<SanPham> listsp = ViewData["dssp"] as List<SanPham>;
+}
+<style>
+    form {
+        display: inline;
+    }
+</style>
+<section class="content-header">
+    <h1>
+        Danh sách sản phẩm
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
+        <li><a href="#">Danh mục sản phẩm</a></li>
+        <li class="active">Danh sách sản phẩm</li>
+    </ol>
+</section>
+<section class="content">
+    <div class="row d-md-flex">
+        @foreach (SanPham i in listsp)
+        {
+            <div class="col-md-4 ">
+                <div class="box bg-gray">
+                    <div class="box-header with-border col-md-12">
+                        <h3>@i.tenSP</h3>
+                    </div>
+                    <div class="box-body">
+                        <div class="col-md-6">
+                            <p class="mb-3"><b>Giá bán:</b> @String.Format("{0:#,##0 VNĐ}", i.giaBan)</p>
+                            <p class="mb-3"><b>Giảm giá:</b> @i.giamGia %</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="@i.hinhDD" class="img-bordered" width="90%" height="100%" />
+                        </div>
+                        <div class="col-md-12">
+                            <div class="btn-group">
+                                @using (Html.BeginForm("Delete", "ProductList", FormMethod.Post))
+                                {
+                                    <input type="hidden" name="spXoa" value="@i.maSP.Trim()" />
+                                    <button class="btn btn-danger">Xoá</button>
+                                }
+                                @using (Html.BeginForm("UnActive", "ProductList", FormMethod.Post))
+                                {
+                                    <input type="hidden" name="spKH" value="@i.maSP.Trim()" />
+                                    <button class="btn btn-success">@ViewBag.nutDuyetSP</button>
+                                }
+                                @using (Html.BeginForm("findSPUpdate", "ProductList", FormMethod.Post))
+                                {
+                                    <input type="hidden" name="maspup" value="@i.maSP.Trim()" />
+                                    <button class="btn btn-info">Chỉnh sửa</button>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+

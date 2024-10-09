@@ -1,0 +1,125 @@
+﻿@using SHOPPER.Models
+@model SHOPPER.Models.SanPham
+@{
+
+    ViewBag.Title = "SHOPPER - ADMIN - Thêm sản phẩm";
+}
+
+<section class="content-header">
+    <h1>
+        Thông tin sản phẩm mới
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
+        <li><a href="#">Danh mục sản phẩm</a></li>
+        <li class="active">Sản phẩm mới</li>
+    </ol>
+</section>
+<section class="content">
+    <div class="row">
+
+        @using (Html.BeginForm("Index", "newProduct", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+        {
+            <div class="col-md-3">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Ảnh mô tả sản phẩm</h3>
+                    </div>
+                    <div class="box-body">
+                        <div class="form-group">
+                            <img src="@ViewBag.HDDSP" id="ArticleImage" class="img-bordered" width="90%" height="auto" />
+                        </div>
+                        <div class="form-group ">
+                            <label for="exampleInputFile">Chọn ảnh: </label>
+                            <input type="file" id="uploadImage" onchange="chooseFile(this)" class="btn btn-primary col-md-12"
+                                   accept="image/*" name="hinhddsp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="box box-warning">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Thông tin sản phẩm</h3>
+                    </div>
+                    <div class="box-body">
+                        <div class="form-group col-xs-6">
+                            <label>Mã sản phẩm</label>
+                            @Html.TextBoxFor(m => m.maSP, new { @class = "form-control", @placeholder = "Enter ..." })
+                        </div>
+                        <div class="form-group  col-xs-6">
+                            <label>Tên Sản phẩm</label>
+                            @Html.TextBoxFor(m => m.tenSP, new { @class = "form-control", @placeholder = "Enter..." })
+                        </div>
+                        <div class="form-group col-xs-6">
+                            <label>Mã Loại</label>
+                            @Html.TextBoxFor(m => m.maLoai, new { @class = "form-control", @placeholder = "Enter..." })
+                        </div>
+                        <div class="form-group col-xs-6">
+                            <label>Giá bán</label>
+                            @Html.TextBoxFor(m => m.giaBan, new { @class = "form-control", @placeholder = "Enter..." })
+                        </div>
+                        <div class="form-group col-xs-6">
+                            <label>Đơn vị tính</label>
+                            @Html.TextBoxFor(m => m.dvt, new { @class = "form-control", @placeholder = "Enter..." })
+                        </div>
+
+                        <div class="form-group  col-xs-6">
+                            <label>Giảm giá</label>
+                            @Html.TextBoxFor(m => m.giamGia, new { @class = "form-control", @placeholder = "Enter..." })
+                        </div>
+                        <div class="form-group col-xs-6">
+                            <label>Ngày đăng</label>
+                            @Html.TextBoxFor(m => m.ngayDang, new { @class = "form-control", @disabled = "disabled" })
+                        </div>
+                        <div class="form-group col-xs-6">
+                            <label>Tình trạng</label>
+                            @Html.TextBoxFor(m => m.tinhTrang, new { @class = "form-control", @placeholder = "Enter..." })
+                        </div>
+                        <div class="form-group col-xs-6">
+                            <label>Tài khoản</label>
+                            @Html.TextBoxFor(m => m.taiKhoan, new { @class = "form-control", @disabled = "disabled" })
+                        </div>
+
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="box box-info">
+                    <div class="box-header">
+                        <h3 class="box-title">
+                            Chi tiết sản phẩm
+                        </h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body pad">
+                        @Html.TextAreaFor(m => m.noiDung, new { @id = "ndtt", @rows = "10", @cols = "80", @style = "width: 100%" })
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <button type="submit" class="btn btn-primary">Lưu sản phẩm</button>
+            </div>
+        }
+    </div>
+
+</section>
+
+<script src="https://cdn.tiny.cloud/1/3ouz7mnsfjm7sxdh0oykyxorqwy2fi4jkndfmo0thnqewi6a/tinymce/6/tinymce.min.js" referrerpolicy="origin">
+
+</script>
+<script>
+    tinymce.init({
+        selector: 'textarea#ndtt',
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+        tinycomments_mode: 'embedded',
+        tinycomments_author: 'Author name',
+        mergetags_list: [
+            { value: 'First.Name', title: 'First Name' },
+            { value: 'Email', title: 'Email' },
+        ]
+    });
+</script>

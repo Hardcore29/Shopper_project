@@ -1,0 +1,130 @@
+﻿@using SHOPPER.Models
+@model SHOPPER.Models.BaiViet
+@{
+    ViewBag.Title = "SHOPPER - ADMIN - DANH SÁCH BÀI VIẾT";
+    List<BaiViet> listBV = (List<BaiViet>)ViewData["dsbv"];
+}
+<style>
+    form {
+        display: inline;
+    }
+
+    #chinhSua {
+        display: none;
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #ecf0f5;
+        height: 100%;
+        width: 100%;
+    }
+
+    #form-chinhSua {
+        background: #fff;
+        max-width: 70%;
+        position: relative;
+        top: 10%;
+        bottom: 5%;
+        left: 55%;
+        transform: translateX(-50%);
+        height: 90%;
+        overflow-y: scroll;
+    }
+    .btn-close{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+</style>
+<section class="content-header">
+    <h1>
+        Danh sách bài viết
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
+        <li><a href="#">Bài viết giới thiệu</a></li>
+        <li class="active">Danh sách bài viết</li>
+    </ol>
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Danh sách các bài viết</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tên bài viết</th>
+                                <th>Mã bài viết</th>
+                                <th>Ngày đăng</th>
+                                <th>Tài khoản</th>
+                                <th>Số lần đọc</th>
+                                <th>Lệnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (BaiViet i in listBV)
+                            {
+                                <tr>
+                                    <td>@i.tenBV</td>
+                                    <td>@i.maBV</td>
+                                    <td>@String.Format("{0: dd/MM/yyyy}", i.ngayDang)</td>
+                                    <td>@i.TaiKhoan1.hoDem @i.TaiKhoan1.tenTV</td>
+                                    <td>@i.Solandoc</td>
+                                    <td>
+                                        @using (Html.BeginForm("findBVUpdate", "ArticleList", FormMethod.Post))
+                                        {
+                                        <input type="hidden" name="mabvup" value="@i.maBV.Trim()" />
+                                        <button id="btn-open" class="fa fa-gear btn btn-success mx-auto" title="Chỉnh sửa"></button>
+                                        }
+
+                                        @using (Html.BeginForm("UnActive", "ArticleList", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="bvKH" value="@i.maBV.Trim()" />
+                                            <button class="fa  @ViewBag.nutDuyet[0] btn btn-primary" title="@ViewBag.nutDuyet[1]"></button>
+                                        }
+                                        @using (Html.BeginForm("Delete", "ArticleList", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="bvXoa" value="@i.maBV.Trim()" />
+                                            <button class="fa  fa-trash-o btn btn-danger" title="Xoá"></button>
+                                        }
+
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->           
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+<script src="https://cdn.tiny.cloud/1/3ouz7mnsfjm7sxdh0oykyxorqwy2fi4jkndfmo0thnqewi6a/tinymce/6/tinymce.min.js" referrerpolicy="origin">
+
+</script>
+<script>
+    tinymce.init({
+        selector: 'textarea#ndtt',
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+        tinycomments_mode: 'embedded',
+        tinycomments_author: 'Author name',
+        mergetags_list: [
+            { value: 'First.Name', title: 'First Name' },
+            { value: 'Email', title: 'Email' },
+        ]
+    });
+</script>
+
+

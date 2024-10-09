@@ -1,0 +1,144 @@
+﻿@using SHOPPER.Models
+@{
+    ViewBag.Title = "SHOPPER - Giỏ hàng";
+    CartShop x = ViewData["Cart"] as CartShop;
+}
+
+
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-0"><a href='@Url.Action("Index","Default")'>Home</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Cart</strong></div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+        <div class="row mb-5">
+                <div class="site-blocks-table">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="product-thumbnail">Hình ảnh</th>
+                                <th class="product-name">Sản phẩm</th>
+                                <th class="product-price">Đơn giá</th>
+                                <th class="product-quantity">Số lượng</th>
+                                <th class="product-total">Tổng</th>
+                                <th class="product-remove">Xoá</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{ 
+                                foreach (CtDonHang i in x.SPDaChon.Values)
+                                {
+                                <tr>
+                                    <td class="product-thumbnail">
+                                        <img src="@Common.getImageProduct(i.maSP)" alt="Image" class="img-fluid">
+                                    </td>
+                                    <td class="product-name">
+                                        <h2 class="h5 text-black">@Common.getNameProduct(i.maSP)</h2>
+                                    </td>
+                                    <td>@String.Format("{0: #,##0 VNĐ}", (i.giaBan - (i.giaBan * i.giamGia / 100)))</td>
+                                    <td>
+                                        <div class="input-group mb-3" style="max-width: 120px;">                                                
+                                            @using (Html.BeginForm("Giam", "Cart", FormMethod.Post))
+                                             {            
+                                                <div>
+                                                    <input type="hidden" name="maspGiam" value="@i.maSP.Trim()" />
+                                                    <button class="btn btn-outline-primary js-btn-minus">-</button>
+                                                </div>                                                   
+                                             }
+                                               
+                                            <input type="text" class="form-control text-center" value="@i.soLuong" autocomplete="off" size="2"/>
+                                                
+                                            @using (Html.BeginForm("Tang", "Cart", FormMethod.Post))
+                                            {
+                                                <div>
+                                                    <input type="hidden" name="maspTang" value="@i.maSP.Trim()" />
+                                                    <button class="btn btn-outline-primary js-btn-plus">+</button>
+                                                </div>  
+                                            }
+                                        </div>
+                                    </td>
+                                    <td>
+                                        @String.Format("{0: #,##0 VNĐ}", x.CostOfOneProduct(i))
+                                    </td>
+                                    @using (Html.BeginForm("RemoveItem", "Cart", FormMethod.Post))
+                                    {
+                                        <td>
+                                            <input type="hidden" name="maspRe" value="@i.maSP.Trim()" />
+                                            <button class="btn btn-primary btn-sm">X</button>
+                                        </td>
+                                    }
+                                    
+                                </tr>
+                                }
+                            }
+                            
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <a href='@Url.Action("Index", "Product")' class="btn btn-outline-primary btn-sm btn-block">Tiếp tục mua sắm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 pl-5">
+                <div class="row justify-content-end">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-12 text-right border-bottom mb-5">
+                                <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <span class="text-black">Tổng</span>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <strong class="text-black">@String.Format("{0: #,##0 VNĐ}", x.totalCartShop())</strong>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <span class="text-black">Phí SHIP</span>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <strong class="text-black">Free</strong>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <span class="text-black">Thuế VAT (10%)</span>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <strong class="text-black">@String.Format("{0: #,##0 VNĐ}",(x.totalCartShop()*10/100))</strong>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <span class="text-black">Total</span>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <strong class="text-black">@String.Format("{0: #,##0 VNĐ}",(x.totalCartShop() + (x.totalCartShop()*10/100)))</strong>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a class="btn btn-primary btn-lg py-3 btn-block" href='@Url.Action("Index","Checkout")'>Thanh toán</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

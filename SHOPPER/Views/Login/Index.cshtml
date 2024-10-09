@@ -1,0 +1,86 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>SHOPPER - LOGIN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="~/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/magnific-popup.css">
+    <link rel="stylesheet" href="~/Content/jquery-ui.css">
+    <link rel="stylesheet" href="~/Content/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="~/Content/aos.css">
+
+    <link rel="stylesheet" href="~/Content/style.css">
+</head>
+<body>
+    <div class="site-section">
+        <div class="container col-md-5">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="h3 mb-3"><a href='@Url.Action("Index","Default")' class=" text-black">SHOPPER</a></h2>
+                </div>
+                <div class="col-md-12">
+                    @using (Html.BeginForm("Index", "Login", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="p-3 p-lg-5 border">
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="user" class="text-black">Tên tài khoản<span class="text-danger">*</span></label>
+                                    @Html.TextBox("user", "", new { @class="form-control", @placeholder="Nhập tài khoản..."})
+                                    @*<input type="text" class="form-control" id="User" name="User" placeholder="">*@
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="pass" class="text-black">Mật khẩu</label>
+                                    @Html.Password("pass", "", new { @class="form-control", @placeholder="Nhập mật khẩu..." })
+                                    @*<input type="password" class="form-control" id="Password" name="Password">*@
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-12">
+                                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="Đăng nhập" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-12">
+                                    <a href='@Url.Action("Index", "Register")'>Chưa có tài khoản? Đăng ký</a>
+                                </div>
+                                <div class="col-lg-12">
+                                    <a href="#">Quên mật khẩu</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery-ui.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/owl.carousel.min.js"></script>
+    <script src="~/Scripts/jquery.magnific-popup.min.js"></script>
+    <script src="~/Scripts/aos.js"></script>
+    <script src="~/Scripts/main.js"></script>
+
+
+</body>
+</html>

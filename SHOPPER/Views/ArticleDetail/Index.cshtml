@@ -1,0 +1,37 @@
+﻿@using SHOPPER.Models
+@{
+    ViewBag.Title = "SHOPPER - ";
+    BaiViet xem = ViewBag.ctbv;
+}
+
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-0"><a href='@Url.Action("Index","Default")'>Trang chủ</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">@xem.tenBV</strong></div>
+        </div>
+    </div>
+</div>
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-black text-center">@xem.tenBV</h2>
+            </div>
+            <div class="col-md-12">
+                <p class="small">@xem.TaiKhoan1.hoDem @xem.TaiKhoan1.tenTV @String.Format("{0:| dd/MM/yyyy}", xem.ngayDang)</p>
+            </div>
+
+            @*<div class="col-md-12">
+                    <img src="@xem.hinhDD" alt="Image" class="img-fluid">
+                </div>*@
+            <div class="col-md-10 text-black">
+                @Html.Raw(xem.noiDung)
+            </div>
+            <div class="col-md-12 text-center mt-5">
+                <a href='@Url.Action("Index","Articles")' class="btn btn-primary ">Trở về</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+

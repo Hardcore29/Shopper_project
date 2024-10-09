@@ -1,0 +1,234 @@
+D:\visual\SHOPPER\SHOPPER\bin\SHOPPER.dll.config
+D:\visual\SHOPPER\SHOPPER\bin\SHOPPER.dll
+D:\visual\SHOPPER\SHOPPER\bin\SHOPPER.pdb
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\csc.exe
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\csc.exe.config
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\csc.rsp
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\csi.exe
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\csi.exe.config
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\csi.rsp
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\Microsoft.Managed.Core.targets
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.AppContext.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Collections.Immutable.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Console.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Globalization.Calendars.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.IO.Compression.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.IO.FileSystem.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Net.Http.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Net.Sockets.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Reflection.Metadata.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.ValueTuple.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Xml.XmlDocument.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Xml.XPath.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\vbc.exe
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\vbc.exe.config
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\vbc.rsp
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\VBCSCompiler.exe
+D:\visual\SHOPPER\SHOPPER\bin\roslyn\VBCSCompiler.exe.config
+D:\visual\SHOPPER\SHOPPER\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\visual\SHOPPER\SHOPPER\bin\Microsoft.Web.Infrastructure.dll
+D:\visual\SHOPPER\SHOPPER\bin\System.Web.Helpers.dll
+D:\visual\SHOPPER\SHOPPER\bin\System.Web.Mvc.dll
+D:\visual\SHOPPER\SHOPPER\bin\System.Web.Razor.dll
+D:\visual\SHOPPER\SHOPPER\bin\System.Web.Webpages.Deployment.dll
+D:\visual\SHOPPER\SHOPPER\bin\System.Web.Webpages.dll
+D:\visual\SHOPPER\SHOPPER\bin\System.Web.Webpages.Razor.dll
+D:\visual\SHOPPER\SHOPPER\bin\System.Web.Razor.xml
+D:\visual\SHOPPER\SHOPPER\bin\System.Web.Webpages.xml
+D:\visual\SHOPPER\SHOPPER\bin\System.Web.Webpages.Deployment.xml
+D:\visual\SHOPPER\SHOPPER\bin\System.Web.Webpages.Razor.xml
+D:\visual\SHOPPER\SHOPPER\bin\System.Web.Helpers.xml
+D:\visual\SHOPPER\SHOPPER\bin\System.Web.Mvc.xml
+D:\visual\SHOPPER\SHOPPER\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\visual\SHOPPER\SHOPPER\obj\Debug\SHOPPER.csproj.AssemblyReference.cache
+D:\visual\SHOPPER\SHOPPER\obj\Debug\SHOPPER.csproj.CoreCompileInputs.cache
+D:\visual\SHOPPER\SHOPPER\obj\Debug\SHOPPER.csproj.CopyComplete
+D:\visual\SHOPPER\SHOPPER\obj\Debug\SHOPPER.dll
+D:\visual\SHOPPER\SHOPPER\obj\Debug\SHOPPER.pdb
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\SHOPPER.dll.config
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\SHOPPER.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\SHOPPER.pdb
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\csc.exe
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\csc.exe.config
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\csc.rsp
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\csi.exe
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\csi.exe.config
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\csi.rsp
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\Microsoft.Managed.Core.targets
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.AppContext.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Collections.Immutable.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Console.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Globalization.Calendars.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.IO.Compression.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.IO.FileSystem.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Net.Http.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Net.Sockets.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Reflection.Metadata.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.ValueTuple.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Xml.XmlDocument.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Xml.XPath.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\vbc.exe
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\vbc.exe.config
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\vbc.rsp
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\VBCSCompiler.exe
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\roslyn\VBCSCompiler.exe.config
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\Antlr3.Runtime.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\Microsoft.Web.Infrastructure.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\Newtonsoft.Json.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Helpers.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Mvc.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Optimization.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Razor.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Webpages.Deployment.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Webpages.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Webpages.Razor.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\WebGrease.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\Antlr3.Runtime.pdb
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\Newtonsoft.Json.xml
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Optimization.xml
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Razor.xml
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Webpages.xml
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Webpages.Deployment.xml
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Webpages.Razor.xml
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Helpers.xml
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\System.Web.Mvc.xml
+D:\visual\imageArticles\SHOPPER\SHOPPER\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\visual\imageArticles\SHOPPER\SHOPPER\obj\Debug\SHOPPER.csproj.AssemblyReference.cache
+D:\visual\imageArticles\SHOPPER\SHOPPER\obj\Debug\SHOPPER.csproj.CoreCompileInputs.cache
+D:\visual\imageArticles\SHOPPER\SHOPPER\obj\Debug\SHOPPER.csproj.CopyComplete
+D:\visual\imageArticles\SHOPPER\SHOPPER\obj\Debug\SHOPPER.dll
+D:\visual\imageArticles\SHOPPER\SHOPPER\obj\Debug\SHOPPER.pdb
+D:\Shopper backup\SHOPPER\SHOPPER\bin\SHOPPER.dll.config
+D:\Shopper backup\SHOPPER\SHOPPER\bin\SHOPPER.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\SHOPPER.pdb
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\csc.exe
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\csc.exe.config
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\csc.rsp
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\csi.exe
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\csi.exe.config
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\csi.rsp
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.AppContext.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Collections.Immutable.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Console.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Globalization.Calendars.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.IO.Compression.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.IO.FileSystem.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Net.Http.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Net.Sockets.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Reflection.Metadata.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.ValueTuple.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Xml.XPath.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\vbc.exe
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\vbc.exe.config
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\vbc.rsp
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\VBCSCompiler.exe
+D:\Shopper backup\SHOPPER\SHOPPER\bin\roslyn\VBCSCompiler.exe.config
+D:\Shopper backup\SHOPPER\SHOPPER\bin\Antlr3.Runtime.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\EntityFramework.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\EntityFramework.SqlServer.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\Microsoft.Web.Infrastructure.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\Newtonsoft.Json.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Helpers.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Mvc.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Optimization.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Razor.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Webpages.Deployment.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Webpages.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Webpages.Razor.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\WebGrease.dll
+D:\Shopper backup\SHOPPER\SHOPPER\bin\Antlr3.Runtime.pdb
+D:\Shopper backup\SHOPPER\SHOPPER\bin\EntityFramework.xml
+D:\Shopper backup\SHOPPER\SHOPPER\bin\EntityFramework.SqlServer.xml
+D:\Shopper backup\SHOPPER\SHOPPER\bin\Newtonsoft.Json.xml
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Optimization.xml
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Razor.xml
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Webpages.xml
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Webpages.Deployment.xml
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Webpages.Razor.xml
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Helpers.xml
+D:\Shopper backup\SHOPPER\SHOPPER\bin\System.Web.Mvc.xml
+D:\Shopper backup\SHOPPER\SHOPPER\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Shopper backup\SHOPPER\SHOPPER\obj\Debug\SHOPPER.csproj.AssemblyReference.cache
+D:\Shopper backup\SHOPPER\SHOPPER\obj\Debug\SHOPPER.csproj.CoreCompileInputs.cache
+D:\Shopper backup\SHOPPER\SHOPPER\obj\Debug\SHOPPER.csproj.CopyComplete
+D:\Shopper backup\SHOPPER\SHOPPER\obj\Debug\SHOPPER.dll
+D:\Shopper backup\SHOPPER\SHOPPER\obj\Debug\SHOPPER.pdb

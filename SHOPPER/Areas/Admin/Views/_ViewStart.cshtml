@@ -1,0 +1,10 @@
+﻿@using SHOPPER.Models;
+@{
+    TaiKhoan x = (TaiKhoan)Session["ttDangNhap"];
+    if (x == null)
+    {
+        Response.Redirect("~/Login");
+    }
+
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}

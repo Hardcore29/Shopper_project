@@ -1,0 +1,162 @@
+﻿@model SHOPPER.Models.KhachHang
+    @using SHOPPER.Models
+@{
+    ViewBag.Title = "SHOPPER - Checkout";
+    CartShop x = ViewData["Cart"] as CartShop;
+}
+
+<div class="site-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-12">
+                
+                    <a href='@Url.Action("Index","Cart")' class="text-black"><small>Quay lại giỏ hàng</small></a>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-5 mb-md-0">
+                @using (Html.BeginForm("SaveToDatabase", "Checkout", FormMethod.Post))
+                {
+
+                    <h2 class="h3 text-black">Thông tin khách hàng</h2>
+                    <div class="p-3 p-lg-5 border">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label class="text-black">Họ tên khách hàng<span class="text-danger">*</span></label>
+                                @Html.TextBoxFor(m => m.tenKH, new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label class="radio-inline">
+                                    @Html.RadioButtonFor(m => m.gioiTinh, new { @name = "gioiTinh" }) Nam
+                                </label>
+                                <label class="radio-inline">
+                                    @Html.RadioButton("gioiTinh", false) Nữ
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-5">
+                            <div class="col-md-12">
+                                <label class="text-black">Ngày sinh<span class="text-danger">*</span></label>
+                                @Html.TextBoxFor(m => m.ngaySinh, new { @class = "form-control", @type = "date" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label class="text-black">Số điện thoại<span class="text-danger">*</span></label>
+                                @Html.TextBoxFor(m => m.soDT, new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label class="text-black">Email<span class="text-danger">*</span></label>
+                                @Html.TextBoxFor(m => m.email, new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-5">
+                            <div class="col-md-12">
+                                <label class="text-black">Địa chỉ<span class="text-danger">*</span></label>
+                                @Html.TextAreaFor(m => m.diaChi, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg py-3 btn-block" onclick='location.href = @Url.Action("Index","Thank/")'>Đặt hàng</button>
+                        </div>
+                    </div>
+               
+                }
+            </div>
+            <div class="col-md-6 mb-5">
+                    <h2 class="h3 mb-3 text-black">Sản phẩm đặt hàng</h2>
+                    <div class="p-3 p-lg-5 border">
+                        <table class="table site-block-order-table mb-5">
+                            <thead>
+                                <tr>
+                                    <th>Hình ảnh</th>
+                                    <th>Sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>GIÁ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    foreach (CtDonHang i in x.SPDaChon.Values)
+                                    {
+                                        <tr>
+                                            <td class="product-thumbnail">
+                                                <img src="@Common.getImageProduct(i.maSP)" alt="Image" class="img-fluid">
+                                            </td>
+                                            <td class="product-name">
+                                                <h2 class="h5 text-black">@Common.getNameProduct(i.maSP)</h2>
+                                            </td>
+                                            <td>
+                                                 @i.soLuong
+                                            </td>
+                                            <td>@String.Format("{0: #,##0 VNĐ}", x.CostOfOneProduct(i))</td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-12 pl-5">
+                            <div class="row justify-content-end">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-12 text-center border-bottom mb-5">
+                                            <h3 class="text-black h4 text-uppercase">Tổng đơn hàng</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <span class="text-black">Tổng tiền sản phẩm</span>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <strong class="text-black">@String.Format("{0: #,##0 VNĐ}", x.totalCartShop())</strong>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <span class="text-black">Phí SHIP</span>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <strong class="text-black">Free</strong>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <span class="text-black">Thuế VAT (10%)</span>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <strong class="text-black">@String.Format("{0: #,##0 VNĐ}", (x.totalCartShop() * 10 / 100))</strong>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-md-6">
+                                            <span class="text-black">Tổng tiền đơn hàng</span>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <strong class="text-black">@String.Format("{0: #,##0 VNĐ}", (x.totalCartShop() + (x.totalCartShop() * 10 / 100)))</strong>
+                                        </div>
+                                    </div>
+                                    <div class="border p-3 mb-3">
+                                        <h3 class="h6 mb-0"><a class="d-block" data-toggle="collapse" href="#collapsebank" role="button" aria-expanded="false" aria-controls="collapsebank">Thanh toán khi nhận hàng</a></h3>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                    </div>     
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+

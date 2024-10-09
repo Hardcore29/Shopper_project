@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8996851edca54fbab8c4d3711c4eb143" Name="Diagram1">
+        <EntityTypeShape EntityType="ShopperModel.BaiViet" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopperModel.CtDonHang" Width="1.5" PointX="8.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopperModel.DonHang" Width="1.5" PointX="6" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopperModel.KhachHang" Width="1.5" PointX="3.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopperModel.LoaiSP" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopperModel.SanPham" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopperModel.TaiKhoan" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="ShopperModel.FK__BaiViet__taiKhoa__1920BF5C" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopperModel.FK__CtDonHang__maSP__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopperModel.FK__CtDonHang__soDH__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopperModel.FK__DonHang__maKH__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopperModel.FK__DonHang__taiKhoa__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopperModel.FK__SanPham__maLoai__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopperModel.FK__SanPham__taiKhoa__22AA2996" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

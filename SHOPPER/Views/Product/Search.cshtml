@@ -1,0 +1,89 @@
+﻿@using SHOPPER.Models
+@{
+    ViewBag.Title = "SHOPPER - Sản phẩm";
+    Common s = (Common)HttpContext.Current.Application["all"];
+}
+
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-0"><a href='@Url.Action("Index","Default")'>Trang chủ</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Sản phẩm</strong></div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+
+        <div class="row mb-5">
+            <div class="col-md-9 order-2">
+
+                <div class="row">
+                    <div class="col-md-12 mb-5">
+                        <div class="float-md-left mb-4"><h2 class="text-black h5">SẢN PHẨM</h2></div>
+                        <div class="">
+                            <div class="btn-group float-right">
+                                <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="dropdownMenuReference" data-toggle="dropdown">Sắp xếp</button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                                    @using (Html.BeginForm("SapXep", "Product", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="sx" value="0" />
+                                        <button class="dropdown-item">Giá: Cao -> Thấp</button>
+                                    }
+                                    @using (Html.BeginForm("SapXep", "Product", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="sx" value="1" />
+                                        <button class="dropdown-item">Giá: Thấp -> Cao</button>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    @{
+                        List<SanPham> listsp = ViewData["dstimkiem"]as List<SanPham>;
+                        foreach (SanPham i in listsp)
+                        {
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a href='@Url.Action("Index","ProductSingle", new {masanpham = i.maSP })'><img src="@i.hinhDD" alt="Image placeholder" class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h3><a href='@Url.Action("Index","ProductSingle", new {masanpham = i.maSP})' class="text-black font-weight-bold">@i.tenSP</a></h3>
+                                        <div class="d-inline-flex">
+                                            <p class="text-primary font-weight-bold mr-2">@String.Format("{0: #,##0 VNĐ}", (i.giaBan - (i.giaBan * i.giamGia / 100)))</p>
+                                            <p class="text-black text-sm"><del>@String.Format("{0: #,##0 VNĐ}", s.giaGoc(i.maSP))</del></p>
+                                        </div>                            
+                                        @using (Html.BeginForm("addToCart", "Product", FormMethod.Post))
+                                        {
+                                            <input name="maspCart" type="hidden" value="@i.maSP" />
+                                            <button class="btn btn-sm btn-primary ">Thêm vào giỏ hàng</button>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+
+            <div class="col-md-3 order-1 mb-5 mb-md-0">
+                <div class="border p-4 rounded mb-4">
+                    <h3 class="mb-3 h6 text-uppercase text-black d-block">Loại sản phẩm:</h3>
+                    <ul class="list-unstyled mb-0">
+                        @foreach (LoaiSP i in s.loaisanpham())
+                        {
+                            <li class="mb-1"><a href='@Url.Action("Index", "Product", new { maloai = i.maLoai })' class="d-flex"><span class="text-black">@i.tenLoai</span> <span class="text-black ml-auto">(@i.SanPhams.Where(z => z.maLoai == i.maLoai).Count())</span></a></li>
+                        }
+                        <li class="mb-1"><a href='@Url.Action("OnSale", "Product")' class="d-flex"><span class="text-black">Sales</span> <span class="text-black ml-auto">(@ViewData["demspsale"])</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

@@ -1,0 +1,90 @@
+﻿@using SHOPPER.Models
+@{
+    SanPham xem = ViewBag.ctsp;
+    ViewBag.Title = "SHOPPER - " + xem.tenSP;
+    Common s = (Common)HttpContext.Current.Application["all"];
+    List<SanPham> l = ViewData["spmoi"] as List<SanPham>;
+}
+
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-0"><a href='@Url.Action("Index","Default")'>Trang chủ</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">@xem.tenSP</strong></div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="@xem.hinhDD" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-black">@xem.tenSP</h2>
+                <p>@Html.Raw(xem.noiDung)</p>
+                <p><strong class="text-primary h4">@String.Format("{0: #,##0 VNĐ}", (xem.giaBan - (xem.giaBan * xem.giamGia / 100)))</strong></p>
+                <p class="text-black"><del>@String.Format("{0: #,##0 VNĐ}", s.giaGoc(xem.maSP))</del></p>
+                <div class="mb-5">
+                    <div class="input-group mb-3" style="max-width: 120px;">
+                            <div class="input-group-prepend">
+                                @*<input type="hidden" name="maspgiam" value="@xem.maSP.Trim()" />*@
+                                <button class="btn btn-outline-primary js-btn-minus">-</button>
+                            </div>
+                        
+                            <input type="text" class="form-control text-center" value="1" placeholder="" aria-describedby="button-addon1">
+                                                                    
+                            <div class="input-group-append">
+                                @*<input type="hidden" name="masptang" value="@xem.maSP.Trim()" />*@
+                                <button class="btn btn-outline-primary js-btn-plus">+</button>
+                            </div>                        
+                    </div>
+                </div>
+                @using (Html.BeginForm("addToCart", "ProductSingle", FormMethod.Post))
+                {
+                    <input type="hidden" name="maspCart" value="@xem.maSP.Trim()" />
+                    <button class=" btn btn-sm btn-primary">Thêm vào giỏ hàng</button>
+                }               
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section block-3 site-blocks-2 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 site-section-heading text-center pt-4">
+                <h2>SẢN PHẨM MỚI</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="nonloop-block-3 owl-carousel">
+                    @foreach (SanPham i in l)
+                    {
+                    <div class="item">
+                        <div class="block-4 text-center">
+                            <figure class="block-4-image">
+                                <img src="@i.hinhDD" alt="Image placeholder" class="img-fluid">
+                            </figure>
+                            <div class="block-4-text p-4">
+                                <h3><a href='@Url.Action("Index","ProductSingle", new {masanpham = i.maSP })' class="text-primary font-weight-bold">@i.tenSP</a></h3>
+                                <p class="text-primary font-weight-bold">@String.Format("{0: #,##0 VNĐ}", (i.giaBan - (i.giaBan * i.giamGia / 100)))</p>
+                                <p class="text-black"><del>@String.Format("{0: #,##0 VNĐ}", s.giaGoc(i.maSP))</del></p>
+                            </div>
+                            @using (Html.BeginForm("addToCart", "ProductSingle", FormMethod.Post))
+                            {
+                                <input type="hidden" name="maspCart" value="@i.maSP.Trim()" />
+                                <button class=" btn btn-sm btn-primary">Thêm vào giỏ hàng</button>
+                            }
+                        </div>
+                        
+                    </div>                       
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
